@@ -1,0 +1,52 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/東山咖啡文化館/dongshan-cafe_02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: var(--font-family-sans-serif),'Microsoft JHengHei';
+    }
+.carousel-item{
+    height: 500px;
+}
+.carousel-caption{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.object-fit{
+    object-fit: contain;
+    object-position: center;
+}
+.coffee img{
+    height: 350px;
+}
+#footer i{
+    font-size: 25px;
+    display: none;
+}
+#footer {
+    display: none;
+}
+#content{
+    display: none;
+}
+#loading{
+    height: 100vh;
+    position: fixed;   
+    z-index: 999;
+}
+@media(max-width: 576px){
+    .carousel-item{
+        height: 300px !important;
+    }
+}
+@media (min-width:768px){
+    .coffee:nth-child(odd)>div:first-child{
+        order:2;
+    }
+    .coffee:nth-child(odd)>div:last-child{
+        order:1;
+        /* text-align: center; */
+    }
+}
